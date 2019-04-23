@@ -5,7 +5,7 @@ function buildDeathStarAsync(){
     console.log(`Builded ${planet.name}, it took 10 seconds`);
     //return, do not work with timeout
     return planet;
-  }, 10000)
+  }, 2000)
 }
 function createACloneArmyAsync(){
   console.log('Cloned Army, go for war...');
@@ -15,7 +15,7 @@ function destroyPlanet(planet){
   setTimeout(function(){
     console.log(`Try to destroy planet`);
     console.log(planet.name === 'Alderaan'?'Aaaaaaargh, Alderaan destroyed\n'.repeat(10):'Nothing seriously happened')
-  },2000); 
+  },10000); 
 }
 
 let notAMoon = buildDeathStarAsync();
